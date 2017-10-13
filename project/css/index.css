@@ -1,0 +1,248 @@
+
+.banner-bg {
+  width: 100%;
+  position: relative; }
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  width: 100%; }
+  .banner div {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+    .banner div:first-of-type {
+      z-index: 100; }
+  .banner .prev, .banner .next {
+    width: 40px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    opacity: 0.3;
+    z-index: 200; }
+  .banner .prev {
+    left: 0;
+    background: url("../images/slider-btn.png") no-repeat left top; }
+  .banner .next {
+    right: 0;
+    background: url("../images/slider-btn.png") no-repeat right top; }
+  .banner img {
+    position: absolute;
+    left: -290px;
+    top: 0; }
+  .banner .download {
+    position: absolute;
+    left: 5%;
+    top: 20px; }
+  .banner .b-dot {
+    position: absolute;
+    width: 176px;
+    text-align: center;
+    left: 43%;
+    bottom: 12px;
+    z-index: 500;
+    height: 12px; }
+    .banner .b-dot li {
+      float: left;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      background: #b5b2a8;
+      margin: 0 5px;
+      z-index: 600; }
+      .banner .b-dot li:first-of-type {
+        background: #5aaa16;
+        z-index: 100; }
+
+.animate {
+  transform-origin: center center;
+  animation: change 5s 1 linear; }
+
+@keyframes change {
+  0% {
+    transform: scale(1.1); }
+  75% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
+
+
+
+.ad-item {
+  width: 1200px;
+  margin: 0px auto 0;
+  overflow: hidden;
+  padding: 42px 13px 0; }
+  .ad-item ul {
+    margin-left: -13px; }
+  .ad-item li {
+    float: left;
+    width: 290px;
+    margin: 0 0 10px 13px;
+    height: 290px; }
+    .ad-item li:hover {
+      box-shadow: 0px 0px 7px #444; }
+    .ad-item li a {
+      color: #444;
+      text-align: center;
+      position: relative; }
+      .ad-item li a p {
+        position: absolute;
+        top: 223px;
+        left: 0;
+        height: 57px;
+        width: 270px;
+        margin: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        text-align: center; }
+        .ad-item li a p b {
+          display: block;
+          font: bold 22px "Microsoft YaHei"; }
+
+.ad-floor {
+  width: 1200px;
+  margin: 0 auto; }
+
+.floor {
+  width: 1200px;
+  margin: 18px auto 18px;
+  overflow: hidden; }
+  .floor .fl-wrap {
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 5px; }
+    .floor .fl-wrap h2 {
+      float: left;
+      height: 32px;
+      font: bold 18px "Microsoft YaHei"; }
+      .floor .fl-wrap h2 a {
+        color: #fc5f3c; }
+        .floor .fl-wrap h2 a i {
+          font-style: normal;
+          display: inline-block;
+          width: 31px;
+          height: 18px;
+          margin-right: 10px;
+          padding: 10px 7px 4px 7px;
+          color: #fff;
+          font-size: 14px;
+          vertical-align: text-bottom;
+          background: url("../images/floor_tit_icon.png") no-repeat 0 0; }
+    .floor .fl-wrap span {
+      float: right; }
+      .floor .fl-wrap span a {
+        color: #4e4e4e; }
+        .floor .fl-wrap span a:hover {
+          text-decoration: underline; }
+  .floor .fl-main .main-left {
+    width: 275;
+    float: left; }
+    .floor .fl-main .main-left a img {
+      height: 463px;
+      width: 275px; }
+  .floor .fl-main .main-right {
+    width: 924px;
+    height: 462px;
+    border-top: 1px solid #d5d5d5;
+    border-left: 1px solid #d5d5d5;
+    float: right;
+    background: #FFF; }
+    .floor .fl-main .main-right a {
+      position: relative;
+      z-index: -50; }
+      .floor .fl-main .main-right a img {
+        transition: all 0.3s  1 linear; }
+      .floor .fl-main .main-right a:hover img {
+        transform: translateX(5px); }
+    .floor .fl-main .main-right li {
+      border-bottom: 1px solid #d5d5d5;
+      position: relative;
+      z-index: 100;
+      border-right: 1px solid #d5d5d5;
+      float: left; }
+  .floor .fl-main .last-li {
+    overflow: hidden;
+    width: 654px;
+    padding: 11px;
+    height: 55px;
+    background: #fff; }
+    .floor .fl-main .last-li img {
+      float: left;
+      width: 80px;
+      height: 52px;
+      margin: 0 14px; }
+
+
+
+.side-left {
+  min-height: 359px;
+  position: fixed;
+  left: 15px;
+  bottom: 30px;
+  z-index: 2000;
+  display: none; }
+  .side-left a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: #666;
+    position: relative; }
+    .side-left a:hover em {
+      visibility: visible;
+      background-color: #008842; }
+    .side-left a:hover b {
+      visibility: hidden; }
+    .side-left a .emHover {
+      visibility: visible;
+      background-color: #008842; }
+    .side-left a b {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url("../images/floor_guide.png") no-repeat 0px 0px; }
+    .side-left a i {
+      display: block;
+      width: 10px;
+      margin: auto;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+      border-top: 1px solid #d7d7d7; }
+    .side-left a em {
+      font-style: normal;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      visibility: hidden;
+      overflow: hidden;
+      width: 24px;
+      height: 29px;
+      padding: 6px 8px;
+      line-height: 14px;
+      font-style: normal;
+      color: #fff;
+      transition: background-color .3s; }
+  .side-left .left-icon-10 {
+    background-position-x: -360px; }
+  .side-left .left-icon-9 {
+    background-position-x: -320px; }
+  .side-left .left-icon-8 {
+    background-position-x: -280px; }
+  .side-left .left-icon-7 {
+    background-position-x: -240px; }
+  .side-left .left-icon-6 {
+    background-position-x: -200px; }
+  .side-left .left-icon-5 {
+    background-position-x: -160px; }
+  .side-left .left-icon-4 {
+    background-position-x: -120px; }
+  .side-left .left-icon-3 {
+    background-position-x: -80px; }
+  .side-left .left-icon-2 {
+    background-position-x: -40px; }
+  .side-left .left-icon-1 {
+    background-position-x: 0px; }
